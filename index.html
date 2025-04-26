@@ -113,8 +113,34 @@
       border-radius: 8px;
       width: 80%;
       margin: 30px auto;
-      text-align: left;
+      text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .manual-installation ol {
+      display: inline-block;
+      text-align: left;
+      margin: 0 auto 20px auto;
+      max-width: 600px;
+    }
+    .manual-installation .download {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      background: #ff7139;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 15px;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .manual-installation .download:hover {
+      background: #e95b20;
     }
   </style>
 </head>
@@ -149,8 +175,8 @@
       <li>Select the <code>manifest.json</code> file from the folder.</li>
       <li>Pin the icon to the toolbar: right-click → “Pin to Toolbar”.</li>
     </ol>
-    <a class="download" href="https://highlighthunterapp.github.io/firefox/HighlightHunter.zip">
-      <img src="https://raw.githubusercontent.com/slezakr/highlighthunter/main/Firefox_logo_2019.png" alt="Firefox Logo">
+    <a class="download" href="https://highlighthunterapp.github.io/firefox/HighlightHunter.zip" target="_blank" rel="noopener">
+      <img src="https://raw.githubusercontent.com/slezakr/highlighthunter/main/Firefox_logo_2019.png" alt="Firefox Logo for download">
       Download for Firefox
     </a>
   </section>
