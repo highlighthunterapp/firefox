@@ -48,20 +48,21 @@
       width: 24px;
       height: 24px;
     }
-    .laptop {
-      position: relative;
-      width: 100%;
-      max-width: 700px;
-      margin: 20px auto;
-      overflow: hidden;
-      border-radius: 10px;
-      border: 6px solid #ccc;
-    }
-    .laptop img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+.laptop {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 6px solid #ccc;
+}
+
+.laptop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image covers the whole area of the div */
+}
     .features {
       display: flex;
       flex-direction: column;
