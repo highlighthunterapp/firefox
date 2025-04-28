@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Highlighter Plugin Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      font-size: 16px;
+    }
+    code {
+      font-family: "Courier New", monospace;
+      background-color: #f0f0f0;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to the Word Highlighter Plugin Guide</h1>
+  <p>This plugin allows you to highlight specific words on a webpage with customizable colors. Here’s how it works:</p>
+
+  <h2>Features:</h2>
+  <ul>
+    <li><strong>Double-click to highlight:</strong> When you double-click a word on the page, it will be highlighted with a unique background color. If the word has already been highlighted, it will retain its color.</li>
+    <li><strong>Triple-click to change the color:</strong> If you triple-click a highlighted word, its color will change to a new randomly generated background color.</li>
+    <li><strong>Right-click to clear all highlights:</strong> If you right-click anywhere on the page, all highlights will be removed, and the word color map will be reset.</li>
+  </ul>
+
+  <h2>How it works:</h2>
+  <p>Once the plugin is installed, it will automatically begin listening for user interactions on the webpage.</p>
+
+  <h3>1. Double-clicking on a word</h3>
+  <p>When you double-click on a word, the plugin highlights it with a new random background color. If the word has been highlighted before, the same color is used for consistency.</p>
+  <p>For example, if you double-click on the word "highlight", the word will be highlighted with a new color.</p>
+
+  <h3>2. Triple-clicking to change color</h3>
+  <p>If you triple-click on a previously highlighted word, the plugin will generate a new random color and change the highlight color of that word.</p>
+  <p>For example, if the word "highlight" was already highlighted in yellow, triple-clicking it will change the highlight color to a new color.</p>
+
+  <h3>3. Right-clicking to clear highlights</h3>
+  <p>When you right-click anywhere on the page, all highlights will be cleared, and the plugin will reset the word color map, allowing you to start fresh.</p>
+
+  <h2>Additional Information:</h2>
+  <p>This plugin ensures accessibility by adjusting the text color to maintain proper contrast against the background highlight color. It generates a suitable text color (either black or white) based on the background color brightness, ensuring readability.</p>
+
+  <h2>Customization</h2>
+  <p>The highlight color is randomly generated each time a new word is highlighted. The plugin also listens for commands to enable or disable the highlighter via messages from a background script. This allows further customization if integrated with other systems or extensions.</p>
+
+  <h3>Here’s a summary of the plugin’s behavior:</h3>
+  <ul>
+    <li><strong>Enable/Disable Highlighter:</strong> The plugin can be toggled on or off via an external message from the background script.</li>
+    <li><strong>Highlighting:</strong> Double-clicking a word will highlight it with a randomly assigned color. Triple-clicking changes the color.</li>
+    <li><strong>Clear Highlights:</strong> Right-clicking removes all highlights from the page.</li>
+  </ul>
+
+  <h2>How to Install and Use:</h2>
+  <ol>
+    <li>Ensure you have the plugin installed in your browser or webpage.</li>
+    <li>Once the plugin is activated, simply double-click, triple-click, or right-click on the page as described above.</li>
+    <li>The plugin will automatically manage the highlighting behavior.</li>
+  </ol>
+
+  <p>Enjoy the enhanced interaction with highlighted words! Let us know if you have any issues or need further customization.</p>
+
+</body>
+</html>
