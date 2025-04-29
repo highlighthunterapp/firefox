@@ -3,171 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Highlight Hunter</title>
+  <title>Word Highlighter Plugin Guide</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1 {
       color: #333;
-      margin: 0;
-      padding: 0;
-      text-align: center;
     }
-    header, section, footer {
-      background: white;
-      margin: 30px auto;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 900px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    p {
+      font-size: 16px;
     }
-    h1, h2 {
-      color: #2c3e50;
+    code {
+      font-family: "Courier New", monospace;
+      background-color: #f0f0f0;
+      padding: 5px;
     }
-    .download {
-      background: #ff7139;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 6px;
-      font-size: 18px;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      justify-content: center;
-      margin-top: 15px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .download:hover {
-      background: #e95b20;
-    }
-    .download img {
-      width: 24px;
-      height: 24px;
-    }
-.laptop {
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
-  border: 6px solid #ccc;
-}
-
-.laptop img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* This ensures the image covers the whole area of the div */
-}
-    .features {
+    .icon-link {
       display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 20px;
       align-items: center;
-    }
-    .feature {
-      background: #ecf0f1;
-      padding: 15px;
-      border-left: 5px solid #3498db;
-      width: 80%;
-      border-radius: 5px;
-      text-align: left;
-    }
-    ol {
-      text-align: left;
-      max-width: 600px;
-      margin: auto;
-    }
-    blockquote {
-      font-style: italic;
-      color: #555;
-      border-left: 4px solid #ddd;
-      padding-left: 15px;
-      margin: 15px auto;
-      max-width: 600px;
-    }
-    footer {
-      font-size: 14px;
-      color: #777;
-    }
-    a {
-      color: #3498db;
+      gap: 8px;
+      margin-bottom: 10px;
       text-decoration: none;
+      color: #000;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    .manual-installation {
-      background: #ecf0f1;
-      padding: 30px;
-      border-radius: 8px;
-      width: 80%;
-      margin: 30px auto;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .manual-installation ol {
-      display: inline-block;
-      text-align: left;
-      margin: 0 auto 20px auto;
-      max-width: 600px;
+    .icon-link svg {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>
-      <img src="https://highlighthunterapp.github.io/firefox/icon.png" alt="Icon" style="vertical-align: middle; width: 32px; height: 32px; margin-right: 10px;">
-      Highlight Hunter
-      <img src="https://highlighthunterapp.github.io/firefox/iconoff.png" alt="Icon off" style="vertical-align: middle; width: 32px; height: 32px; margin-left: 10px;">
-    </h1>
-    <p>A lightweight and fast Firefox extension that lets you highlight words on a page with a double-click.</p>
-    <p><a href="https://addons.mozilla.org/en-US/firefox/addon/highlighthunter/" target="_blank" rel="noopener">Click here to download Highlight Hunter from Firefox Add-ons!</a></p>
-    <div class="laptop">
-      <img src="HighlightHunter.gif" alt="Highlight Hunter Demo">
-    </div>
-  </header>
+  <h1>Welcome to the Word Highlighter Plugin Guide</h1>
+  <p>This plugin allows you to highlight specific words on a webpage with customizable colors. Here’s how it works:</p>
 
-  <section>
-    <h2>🔍 Main Features</h2>
-    <div class="features">
-      <div class="feature">🖱️ Double-click highlights all occurrences of a word on the page.</div>
-      <div class="feature">🎨 Triple-click changes the highlight color.</div>
-      <div class="feature">🧹 Right-click removes all highlights.</div>
-    </div>
-  </section>
+  <h2>Features:</h2>
+  <ul>
+    <li><strong>Double-click to highlight:</strong> When you double-click a word on the page, it will be highlighted with a unique background color. If the word has already been highlighted, it will retain its color.</li>
+    <li><strong>Triple-click to change the color:</strong> If you triple-click a highlighted word, its color will change to a new randomly generated background color.</li>
+    <li><strong>Right-click to clear all highlights:</strong> If you right-click anywhere on the page, all highlights will be removed, and the word color map will be reset.</li>
+  </ul>
 
-  <section class="manual-installation">
-    <h2>📥 Manual Installation</h2>
-    <ol>
-      <li>Download the extension using the button below.</li>
-      <li>In Firefox, open <code>about:debugging</code> → “This Firefox” → “Load Temporary Add-on”.</li>
-      <li>Select the <code>manifest.json</code> file from the folder.</li>
-      <li>Pin the icon to the toolbar: right-click → “Pin to Toolbar”.</li>
-    </ol>
-    <div style="text-align: center;">
-      <a class="download" href="https://highlighthunterapp.github.io/firefox/HighlightHunter.zip" target="_blank" rel="noopener">
-        <img src="https://highlighthunterapp.github.io/firefox/Firefox_logo_2019.png" alt="Firefox Logo for download">
-        Download for Firefox
-      </a>
-    </div>
-  </section>
+  <h2>How it works:</h2>
+  <p>Once the plugin is installed, it will automatically begin listening for user interactions on the webpage.</p>
 
-  <section>
-    <h2>💬 Reviews</h2>
-    <blockquote>"Perfect tool for studying and reading!" – user</blockquote>
-    <blockquote>"Simple but effective. I love the triple-click feature." – another user</blockquote>
-  </section>
+  <h3>1. Double-clicking on a word</h3>
+  <p>When you double-click on a word, the plugin highlights it with a new random background color. If the word has been highlighted before, the same color is used for consistency.</p>
+  <p>For example, if you double-click on the word "highlight", the word will be highlighted with a new color.</p>
 
-  <footer>
-    📧 Contact: <a href="mailto:highlighthunterapp@gmail.com">highlighthunterapp@gmail.com</a>
-  </footer>
+  <h3>2. Triple-clicking to change color</h3>
+  <p>If you triple-click on a previously highlighted word, the plugin will generate a new random color and change the highlight color of that word.</p>
+  <p>For example, if the word "highlight" was already highlighted in yellow, triple-clicking it will change the highlight color to a new color.</p>
+
+  <h3>3. Right-clicking to clear highlights</h3>
+  <p>When you right-click anywhere on the page, all highlights will be cleared, and the plugin will reset the word color map, allowing you to start fresh.</p>
+
+  <h2>Additional Information:</h2>
+  <p>This plugin ensures accessibility by adjusting the text color to maintain proper contrast against the background highlight color. It generates a suitable text color (either black or white) based on the background color brightness, ensuring readability.</p>
+
+  <p>You can also see the plugin in action here:</p>
+  <a class="icon-link" href="https://x.com/highlighthapp/status/1916930788823531728" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227"><path d="M714.13 544.06 1187.7 0h-108.7L660.4 440.64 279.15 0H0l501.6 598.14 0 628.45h194.56V596.2zm-27.54 69.6-109.63 125.8v359.57H573.8v-360.9L99.77 83.5h108.7L660.4 693.7 1041.7 1133H1200z" fill="#000"/></svg>
+    See demo on X (Twitter)
+  </a>
+  <a class="icon-link" href="https://youtu.be/Zbz3rJJsVSk" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.9-42.3-48.6-48.6C456.5 64 288 64 288 64S119.5 64 74.9 75.5C51.2 81.8 32.6 100.4 26.3 124.1 16 168.7 16 256 16 256s0 87.3 10.3 131.9c6.3 23.7 24.9 42.3 48.6 48.6C119.5 448 288 448 288 448s168.5 0 213.1-11.5c23.7-6.3 42.3-24.9 48.6-48.6C560 343.3 560 256 560 256s0-87.3-10.3-131.9zM232 336V176l142.7 80L232 336z"/></svg>
+    Watch demo on YouTube
+  </a>
 
 </body>
 </html>
