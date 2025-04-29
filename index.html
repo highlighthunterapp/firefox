@@ -44,25 +44,24 @@
     .download:hover {
       background: #e95b20;
     }
-    .download img {
+    .download img, .download svg {
       width: 24px;
       height: 24px;
     }
-.laptop {
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
-  border: 6px solid #ccc;
-}
-
-.laptop img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* This ensures the image covers the whole area of the div */
-}
+    .laptop {
+      position: relative;
+      width: 100%;
+      max-width: 700px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 6px solid #ccc;
+    }
+    .laptop img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     .features {
       display: flex;
       flex-direction: column;
@@ -155,6 +154,24 @@
       <a class="download" href="https://highlighthunterapp.github.io/firefox/HighlightHunter.zip" target="_blank" rel="noopener">
         <img src="https://highlighthunterapp.github.io/firefox/Firefox_logo_2019.png" alt="Firefox Logo for download">
         Download for Firefox
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>▶️ See it in Action</h2>
+    <div class="features">
+      <a class="download" href="https://x.com/highlighthapp/status/1916930788823531728" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" width="24" height="24" fill="white">
+          <path d="M714.13 544.06 1187.7 0h-108.7L660.4 440.64 279.15 0H0l501.6 598.14 0 628.45h194.56V596.2zm-27.54 69.6-109.63 125.8v359.57H573.8v-360.9L99.77 83.5h108.7L660.4 693.7 1041.7 1133H1200z"/>
+        </svg>
+        View on X (Twitter)
+      </a>
+      <a class="download" href="https://youtu.be/Zbz3rJJsVSk" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="24" height="24" fill="white">
+          <path d="M549.7 124.1c-6.3-23.7-24.9-42.3-48.6-48.6C456.5 64 288 64 288 64S119.5 64 74.9 75.5C51.2 81.8 32.6 100.4 26.3 124.1 16 168.7 16 256 16 256s0 87.3 10.3 131.9c6.3 23.7 24.9 42.3 48.6 48.6C119.5 448 288 448 288 448s168.5 0 213.1-11.5c23.7-6.3 42.3-24.9 48.6-48.6C560 343.3 560 256 560 256s0-87.3-10.3-131.9zM232 336V176l142.7 80L232 336z"/>
+        </svg>
+        Watch on YouTube
       </a>
     </div>
   </section>
