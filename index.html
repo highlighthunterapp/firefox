@@ -27,19 +27,23 @@
     .download {
       background: #ff7139;
       color: white;
-      padding: 12px 24px;
+      padding: 12px 20px;
       border: none;
       border-radius: 6px;
-      font-size: 18px;
+      font-size: 16px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       text-decoration: none;
-      justify-content: center;
-      margin-top: 15px;
+      justify-content: flex-start;
+      margin-top: 10px;
       margin-left: auto;
       margin-right: auto;
+      white-space: nowrap;
+      max-width: 320px;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .download:hover {
       background: #e95b20;
@@ -47,6 +51,7 @@
     .download img, .download svg {
       width: 24px;
       height: 24px;
+      flex-shrink: 0;
     }
     .laptop {
       position: relative;
