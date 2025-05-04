@@ -25,26 +25,25 @@
       color: #2c3e50;
     }
     .download {
-      background: #ff7139;
       color: white;
-      padding: 12px 24px;
+      padding: 12px;
       border: none;
       border-radius: 6px;
-      font-size: 18px;
+      font-size: 0;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      text-decoration: none;
       justify-content: center;
-      margin-top: 15px;
+      margin-top: 10px;
       margin-left: auto;
       margin-right: auto;
+      width: 50px;
+      height: 50px;
     }
     .download:hover {
-      background: #e95b20;
+      opacity: 0.8;
     }
-    .download img, .download svg {
+    .download img {
       width: 24px;
       height: 24px;
     }
@@ -64,31 +63,10 @@
     }
     .features {
       display: flex;
-      flex-direction: column;
       gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
       margin-top: 20px;
-      align-items: center;
-    }
-    .feature {
-      background: #ecf0f1;
-      padding: 15px;
-      border-left: 5px solid #3498db;
-      width: 80%;
-      border-radius: 5px;
-      text-align: left;
-    }
-    ol {
-      text-align: left;
-      max-width: 600px;
-      margin: auto;
-    }
-    blockquote {
-      font-style: italic;
-      color: #555;
-      border-left: 4px solid #ddd;
-      padding-left: 15px;
-      margin: 15px auto;
-      max-width: 600px;
     }
     footer {
       font-size: 14px;
@@ -100,21 +78,6 @@
     }
     a:hover {
       text-decoration: underline;
-    }
-    .manual-installation {
-      background: #ecf0f1;
-      padding: 30px;
-      border-radius: 8px;
-      width: 80%;
-      margin: 30px auto;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .manual-installation ol {
-      display: inline-block;
-      text-align: left;
-      margin: 0 auto 20px auto;
-      max-width: 600px;
     }
   </style>
 </head>
@@ -136,50 +99,34 @@
   <section>
     <h2>🔍 Main Features</h2>
     <div class="features">
-      <div class="feature">🖱️ Double-click highlights all occurrences of a word on the page.</div>
-      <div class="feature">🎨 Triple-click changes the highlight color.</div>
-      <div class="feature">🧹 Right-click removes all highlights.</div>
-    </div>
-  </section>
-
-  <section class="manual-installation">
-    <h2>📥 Manual Installation</h2>
-    <ol>
-      <li>Download the extension using the button below.</li>
-      <li>In Firefox, open <code>about:debugging</code> → “This Firefox” → “Load Temporary Add-on”.</li>
-      <li>Select the <code>manifest.json</code> file from the folder.</li>
-      <li>Pin the icon to the toolbar: right-click → “Pin to Toolbar”.</li>
-    </ol>
-    <div style="text-align: center;">
-      <a class="download" href="https://highlighthunterapp.github.io/firefox/HighlightHunter.zip" target="_blank" rel="noopener">
-        <img src="https://highlighthunterapp.github.io/firefox/Firefox_logo_2019.png" alt="Firefox Logo for download">
-        Download for Firefox
-      </a>
+      <div>🖱️ Double-click highlights all occurrences of a word on the page.</div>
+      <div>🎨 Triple-click changes the highlight color.</div>
+      <div>🧹 Right-click removes all highlights.</div>
     </div>
   </section>
 
   <section>
     <h2>▶️ See it in Action</h2>
     <div class="features">
-      <a class="download" href="https://x.com/highlighthapp/status/1916930788823531728" target="_blank" rel="noopener">
-        View on X (Twitter)
+      <a class="download" href="https://x.com/highlighthapp/status/1916930788823531728" target="_blank" rel="noopener" style="background-color: #1DA1F2;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg" alt="X logo">
       </a>
-      <a class="download" href="https://youtu.be/Zbz3rJJsVSk" target="_blank" rel="noopener">
-        Watch on YouTube
+      <a class="download" href="https://youtu.be/Zbz3rJJsVSk" target="_blank" rel="noopener" style="background-color: #FF0000;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube logo">
       </a>
-      <a class="download" href="https://www.tiktok.com/@highlighthunterapp/video/7498993472909675798" target="_blank" rel="noopener">
-        Watch on TikTok
+      <a class="download" href="https://www.tiktok.com/@highlighthunterapp/video/7498993472909675798" target="_blank" rel="noopener" style="background-color: #000000;">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0a/TikTok_logo.svg" alt="TikTok logo">
       </a>
-      <a class="download" href="https://www.linkedin.com/in/highlighthunter-highlighthunterapp-bb6836363/" target="_blank" rel="noopener">
-        Visit on LinkedIn
+      <a class="download" href="https://www.linkedin.com/in/highlighthunter-highlighthunterapp-bb6836363/" target="_blank" rel="noopener" style="background-color: #0A66C2;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn logo">
       </a>
     </div>
   </section>
 
   <section>
     <h2>💬 Reviews</h2>
-  <blockquote>"A perfect tool for studying and reading!" – Lucia M.</blockquote>
-  <blockquote>"Simple yet effective. I love the triple-click feature." – Peter K.</blockquote>
+    <blockquote>"A perfect tool for studying and reading!" – Lucia M.</blockquote>
+    <blockquote>"Simple yet effective. I love the triple-click feature." – Peter K.</blockquote>
   </section>
 
   <footer>
