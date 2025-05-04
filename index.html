@@ -116,6 +116,35 @@
       margin: 0 auto 20px auto;
       max-width: 600px;
     }
+
+    /* Nové pre sekciu See it in Action */
+    .action-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .action-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .action-image img {
+      max-width: 250px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .action-section {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
@@ -160,19 +189,24 @@
 
   <section>
     <h2>▶️ See it in Action</h2>
-    <div class="features">
-      <a class="download" href="https://x.com/highlighthapp/status/1916930788823531728" target="_blank" rel="noopener">
-        View on X (Twitter)
-      </a>
-      <a class="download" href="https://youtu.be/Zbz3rJJsVSk" target="_blank" rel="noopener">
-        Watch on YouTube
-      </a>
-      <a class="download" href="https://www.tiktok.com/@highlighthunterapp/video/7498993472909675798" target="_blank" rel="noopener">
-        Watch on TikTok
-      </a>
-      <a class="download" href="https://www.linkedin.com/in/highlighthunter-highlighthunterapp-bb6836363/" target="_blank" rel="noopener">
-        Visit on LinkedIn
-      </a>
+    <div class="action-section">
+      <div class="action-buttons">
+        <a class="download" href="https://x.com/highlighthapp/status/1916930788823531728" target="_blank" rel="noopener">
+          View on X (Twitter)
+        </a>
+        <a class="download" href="https://youtu.be/Zbz3rJJsVSk" target="_blank" rel="noopener">
+          Watch on YouTube
+        </a>
+        <a class="download" href="https://www.tiktok.com/@highlighthunterapp/video/7498993472909675798" target="_blank" rel="noopener">
+          Watch on TikTok
+        </a>
+        <a class="download" href="https://www.linkedin.com/in/highlighthunter-highlighthunterapp-bb6836363/" target="_blank" rel="noopener">
+          Visit on LinkedIn
+        </a>
+      </div>
+      <div class="action-image">
+        <img src="withlaptop.png" alt="See it in action laptop preview">
+      </div>
     </div>
   </section>
 
