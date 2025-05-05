@@ -30,9 +30,6 @@
       margin: 10px 0;
       color: #333;
     }
-    p {
-      font-size: 16px;
-    }
     .mouse-actions {
       display: flex;
       justify-content: center;
@@ -57,17 +54,7 @@
     .description {
       font-size: 14px;
       color: #444;
-    }
-    code {
-      font-family: "Courier New", monospace;
-      background-color: #f0f0f0;
-      padding: 5px;
-    }
-    .content {
       text-align: left;
-      max-width: 800px;
-      margin: 0 auto;
-      margin-top: 50px;
     }
   </style>
 </head>
@@ -84,25 +71,25 @@
   <div class="mouse-actions">
     <div class="action">
       <img src="Untitled_Artwork.png" alt="Double click">
-      <div class="label">Double-click to highlight</div>
+      <div class="label">1. Double-clicking on a word</div>
       <div class="description">
-        When you double-click a word on the page, it will be highlighted with a unique background color.  
-        If the word has already been highlighted, it will retain its color.
+        When you double-click on a word, the plugin highlights it with a new random background color. If the word has been highlighted before, the same color is used for consistency.<br><br>
+        For example, if you double-click on the word "highlight", the word will be highlighted with a new color.
       </div>
     </div>
     <div class="action">
       <img src="Untitled_Artwork 1.png" alt="Triple click">
-      <div class="label">Triple-click to change the color</div>
+      <div class="label">2. Triple-clicking to change color</div>
       <div class="description">
-        If you triple-click a highlighted word, its color will change to a new randomly generated background color.
+        If you triple-click on a previously highlighted word, the plugin will generate a new random color and change the highlight color of that word.<br><br>
+        For example, if the word "highlight" was already highlighted in yellow, triple-clicking it will change the highlight color to a new color.
       </div>
     </div>
     <div class="action">
       <img src="Untitled_Artwork 2.png" alt="Right click">
-      <div class="label">Right-click to clear all highlights</div>
+      <div class="label">3. Right-clicking to clear highlights</div>
       <div class="description">
-        If you right-click anywhere on the page, all highlights will be removed, and the word color map will be reset.
+        When you right-click anywhere on the page, all highlights will be cleared, and the plugin will reset the word color map, allowing you to start fresh.
       </div>
     </div>
   </div>
-
