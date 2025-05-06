@@ -48,20 +48,30 @@
       width: 24px;
       height: 24px;
     }
+
+    /* Laptop mockup with embedded gif */
     .laptop {
       position: relative;
       width: 100%;
       max-width: 700px;
       margin: 20px auto;
-      overflow: hidden;
-      border-radius: 10px;
-      border: 6px solid #ccc;
     }
-    .laptop img {
+
+    .laptop-frame {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      display: block;
     }
+
+    .laptop-gif {
+      position: absolute;
+      top: 17.5%;   /* uprav podľa presného mockupu */
+      left: 13%;    /* uprav podľa presného mockupu */
+      width: 74%;   /* uprav podľa veľkosti obrazovky mockupu */
+      height: auto;
+      border-radius: 4px;
+      pointer-events: none;
+    }
+
     .features {
       display: flex;
       flex-direction: column;
@@ -150,9 +160,13 @@
       <img src="https://highlighthunterapp.github.io/firefox/Firefox_logo_2019.png" alt="Firefox Logo">
       Download for Firefox
     </a>
+
+    <!-- 🖼 Laptop mockup with gif inside -->
     <div class="laptop">
-      <img src="HighlightHunter.gif" alt="Highlight Hunter Demo">
+      <img class="laptop-frame" src="laptop-computer-mockup-transparent.png" alt="Laptop Frame">
+      <img class="laptop-gif" src="HighlightHunter.gif" alt="Highlight Hunter Demo">
     </div>
+
   </header>
 
   <section>
